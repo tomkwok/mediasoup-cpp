@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     mediasoup->Test();
 	mediasoup::RtpCapabilities rtpCapabilities = mediasoup->GetSupportedRtpCapabilities();
 	for (const auto& item : rtpCapabilities.headerExtensions) {
-		//std::cout << "headerExtensions.uri:" << item.uri << std::endl;
+		std::cout << "headerExtensions.uri:" << item.uri << std::endl;
 	}
 
 	Worker myWorker;	
