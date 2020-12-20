@@ -154,7 +154,7 @@ uv_loop_t* Mediasoup::GetLoop()
 }
 
 void Mediasoup::WorkerFun() {    
-    MS_lOGI("WorkerFun begine");
+    MS_lOGI("WorkerFun begin");
 	
     MS_lOGI("uv_run");
     uv_run(m_loop, UV_RUN_DEFAULT);    

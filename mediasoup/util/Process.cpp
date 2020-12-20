@@ -35,6 +35,9 @@ const std::string& Process::Environ(const std::string& name) {
 }
 
 const std::string& Process::ExePath() {
+	#ifndef MAX_PATH
+		#define MAX_PATH PATH_MAX
+	#endif
 	MS_lOGF();
 	if (m_exePath.empty()) {
 		char exePath[MAX_PATH] = { 0 };
