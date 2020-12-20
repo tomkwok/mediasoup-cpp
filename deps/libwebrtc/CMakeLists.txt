@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.13)
 
 set(PROJECT_NAME "libwebrtc")
 project(${PROJECT_NAME})
