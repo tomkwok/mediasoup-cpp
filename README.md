@@ -25,9 +25,9 @@ make -j3
 
 ## Usage
 
-After building, a binary named `mediasoup-worker` can be found in directory `build/`. The worker binary can be used with [mediasoup-go](https://github.com/jiyeyuran/mediasoup-go) by running with the environment variable `MEDIASOUP_WORKER_BIN` set to the path of compiled `mediasoup-worker`. Hence, we avoided having to use a Node.js build system to compile the worker written in C++, and also avoided having to use the Node.js implementation of the endpoint server.
+After building, a binary named `mediasoup-worker` can be found in directory `build/`. The worker binary may be used with a demo server implemented with [mediasoup-go](https://github.com/jiyeyuran/mediasoup-go) with the environment variable `MEDIASOUP_WORKER_BIN` set to the path of compiled `mediasoup-worker`. Hence, we avoided having to use a Node.js build system to compile the worker written in C++, and also avoided having to use the Node.js implementation of the endpoint server.
 
-A binary named `mediasoup-demo` also found in directory `build/` is useful for debugging only as it cannot be used to launch a server instance. The endpoint server re-write in C++ found in [barry-ran/mediasoup-cpp](https://github.com/barry-ran/mediasoup-cpp) is incomplete.
+A binary named `mediasoup-demo` also found in directory `build/` is useful for debugging only as it cannot be used to launch a server instance for the demo application. The endpoint server re-write in C++ found in [barry-ran/mediasoup-cpp](https://github.com/barry-ran/mediasoup-cpp) is incomplete.
 
 ## Web app
 

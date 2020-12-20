@@ -10,7 +10,7 @@
 namespace mediasoup
 {
 
-#define MEDIASOUP_VERSION "MEDIASOUP_VERSION=3.6.0"
+#define MEDIASOUP_VERSION "MEDIASOUP_VERSION=3.5.15"
 
 // If env MEDIASOUP_WORKER_BIN is given, use it as worker binary.
 // Otherwise if env MEDIASOUP_BUILDTYPE is 'Debug' use the Debug binary.
